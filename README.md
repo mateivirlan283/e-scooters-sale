@@ -1,5 +1,5 @@
 # E-scooters sale
 
-This is a demo app, written in Java Spring Boot.
-
-Development in progress.
+Online store specializing 
+in the sale of electric scooters
+and accessories for them

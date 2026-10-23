@@ -73,4 +73,45 @@ public class Product {
     public void setStock(Integer stock) { this.stock = stock; }
     public void setCategory(Category category) { this.category = category; }
     public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
+
+
+    @Column(name = "top_speed_kmh")
+    private Integer topSpeedKmH;
+
+    @Column(name = "motor_power_watts")
+    private Integer motorPowerWatts;
+
+    @Column(name = "max_range_km")
+    private Integer maxRangeKm;
+
+    public Product(
+            String name,
+            String description,
+            BigDecimal price,
+            Integer stock,
+            Category category,
+            Integer topSpeedKmH,
+            Integer motorPowerWatts,
+            Integer maxRangeKm
+    ) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.stock = stock;
+        this.category = category;
+        this.topSpeedKmH = topSpeedKmH;
+        this.motorPowerWatts = motorPowerWatts;
+        this.maxRangeKm = maxRangeKm;
+
+
+    }
+    public Integer getTopSpeedKmH() { return topSpeedKmH; }
+    public Integer getMotorPowerWatts() { return motorPowerWatts; }
+    public Integer getMaxRangeKm() { return maxRangeKm; }
+
+    public void setTopSpeedKmH(Integer topSpeedKmH) { this.topSpeedKmH = topSpeedKmH; }
+    public void setMotorPowerWatts(Integer motorPowerWatts) { this.motorPowerWatts = motorPowerWatts; }
+    public void setMaxRangeKm(Integer maxRangeKm) { this.maxRangeKm = maxRangeKm; }
+
+
 }

@@ -11,5 +11,9 @@ public record ProductResponse(
         Integer stock,
         Long categoryId,
         String categoryName,
-        LocalDateTime createdAt
+        LocalDateTime createdAt,
+
+        Integer topSpeedKmH,
+        Integer motorPowerWatts,
+        Integer maxRangeKm
 ) {}
